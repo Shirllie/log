@@ -1,0 +1,30 @@
+
+<h1 style="text-align:center">
+  Signup  Page
+</h1>
+<div class="signup">
+  <h2 class="signup-header">Sign Up</h2>
+  <form [formGroup]="signupForm" class="signup-container" (ngSubmit)="signup()">
+
+    <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+      <input type="firstname" placeholder="Firstname" formControlName="firstname">
+    </p>
+
+    <div *ngIf="isSubmitted && formControls.firstname.errors" class="help-block">
+      <div *ngIf="formControls.firstname.errors.required">Firstname is required</div>
+    </div>
+
+    <p [ngClass]="{ 'has-error': isSubmitted && formControls.othernames.errors }">
+      <input type="othernames" placeholder="Othernames" formControlName="othernames">
+    </p>
+
+    <div *ngIf="isSubmitted && formControls.othernames.errors" class="help-block">
+      <div *ngIf="formControls.othernames.errors.required">Password is required</div>
+    </div>
+
+    <p>
+      <input type="submit" value="Save">
+    </p>
+
+  </form>
+</div>

@@ -1,0 +1,92 @@
+/* button{
+  background: rgb(1, 29, 51);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+} */
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.signup {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+.signup-header,
+.signup p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.signup-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(15, 66, 107);
+}
+
+.signup-header {
+  background: rgb(12, 77, 129);
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.signup-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+.signup p {
+  padding: 12px;
+}
+
+.signup input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.signup input[type="email"],
+.signup input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+.signup input[type="email"]:focus,
+.signup input[type="password"]:focus {
+  border-color: #888;
+}
+
+.signup input[type="submit"] {
+  background: rgb(1, 29, 51);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.signup input[type="submit"]:hover {
+  background: #17c;
+}
+
+.signup input[type="submit"]:focus {
+  border-color: #05a;
+}
+.has-error input[type="firstname"],
+.has-error input[type="othernames"] {
+    border-color: rgb(216, 12, 12);
+    color: rgb(230, 14, 14);
+}
